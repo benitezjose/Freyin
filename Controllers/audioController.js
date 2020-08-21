@@ -1,6 +1,6 @@
 const ytdl = require("ytdl-core");
 const config = require("../config");
-var server = require("../server");
+var bot = require("../server");
 
 const siuAudio = "https://www.youtube.com/watch?v=CGDYmD-ZyoY";
 const primoCocoSily = "https://www.youtube.com/watch?v=zNgOKYx_khk";
@@ -22,7 +22,7 @@ function PlayAudio(url) {
   });
 }
 
-server.bot.on("message", (msg) => {
+bot.on("message", (msg) => {
   if (msg.content === config.prefixCommand + "si") {
     PlayAudio(siuAudio);
   }

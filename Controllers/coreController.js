@@ -1,8 +1,8 @@
 const config = require("../config");
-var server = require("../server");
+var bot = require("../server");
 
-server.bot.on("ready", () => {
+bot.on("ready", () => {
   console.log(`bot running`);
 });
 
-server.bot.login(config.token);
+bot.login(config.token);

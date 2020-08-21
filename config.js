@@ -1,5 +1,5 @@
 module.exports = {
-  token: "NzQ2NDI3OTcwNzU4OTAxODMz.X0ALOA.9EsgFqHjWip84Ipu19uZjOKHwR4",
+  token: "NzQ2NDI3OTcwNzU4OTAxODMz.X0ALOA.VcdIAqfi4BZcoFeaqKNZVvgO-1c",
   prefixCommand: "!",
   prefixImage: "./images/",
 };

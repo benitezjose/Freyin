@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 
-exports.bot = new Discord.Client();
+var bot = new Discord.Client();
+module.exports = bot;
 
+const coreController = require("./Controllers/coreController");
 const imageController = require("./Controllers/imageController");
 const audioController = require("./Controllers/audioController");
-const coreController = require("./Controllers/coreController");

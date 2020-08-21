@@ -1,6 +1,5 @@
 const config = require("../config");
-const server = require("../server");
-
+const bot = require("../server");
 
 function SendImage(imageName) {
   msg.channel.send({
@@ -8,7 +7,7 @@ function SendImage(imageName) {
   });
 }
 
-server.bot.on("message", (msg) => {
+bot.on("message", (msg) => {
   if (msg.content === config.prefixCommand + "info") {
     SendImage("teLaCreisteWe.jpg");
   }
