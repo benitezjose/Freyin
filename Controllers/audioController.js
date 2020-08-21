@@ -31,5 +31,3 @@ bot.on("message", (msg) => {
     PlayAudio(primoCocoSily);
   }
 });
-
-bot.login(config.token);

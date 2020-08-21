@@ -5,4 +5,4 @@ bot.on("ready", () => {
   console.log(`bot running`);
 });
 
-// bot.login(config.token);
+bot.login(config.token);
