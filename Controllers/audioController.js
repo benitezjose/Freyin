@@ -5,7 +5,7 @@ var bot = require("../server");
 const siuAudio = "https://www.youtube.com/watch?v=CGDYmD-ZyoY";
 const primoCocoSily = "https://www.youtube.com/watch?v=zNgOKYx_khk";
 
-function PlayAudio(url) {
+function PlayAudio(msg, url) {
   const voiceChannel = msg.member.voice.channel;
 
   if (!voiceChannel) {
@@ -24,10 +24,12 @@ function PlayAudio(url) {
 
 bot.on("message", (msg) => {
   if (msg.content === config.prefixCommand + "si") {
-    PlayAudio(siuAudio);
+    PlayAudio(msg, siuAudio);
   }
 
   if (msg.content === config.prefixCommand + "iii") {
     PlayAudio(primoCocoSily);
   }
 });
+
+bot.login(config.token);
