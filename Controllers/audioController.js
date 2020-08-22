@@ -28,6 +28,6 @@ bot.on("message", (msg) => {
   }
 
   if (msg.content === config.prefixCommand + "iii") {
-    PlayAudio(primoCocoSily);
+    PlayAudio(msg,primoCocoSily);
   }
 });
