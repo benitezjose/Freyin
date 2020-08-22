@@ -1,30 +1,31 @@
 const config = require("../config");
 const bot = require("../server");
 
-function SendImage(imageName) {
+function SendImage(imageName,msg) {
   msg.channel.send({
-    files: [prefixImage + imageName],
+    files: [config.prefixImage + imageName],
   });
 }
 
 bot.on("message", (msg) => {
   if (msg.content === config.prefixCommand + "info") {
-    SendImage("teLaCreisteWe.jpg");
+    //console.log()
+    SendImage("teLaCreisteWe.jpg",msg);
   }
 
   if (msg.content === config.prefixCommand + "ward") {
-    SendImage("ward.jpg");
+    SendImage("ward.jpg",msg);
   }
 
   if (msg.content === config.prefixCommand + "xd") {
-    SendImage("xd.jpg");
+    SendImage("xd.jpg",msg);
   }
 
   if (msg.content === config.prefixCommand + "name") {
-    SendImage("name.jpg");
+    SendImage("name.jpg",msg);
   }
 
   if (msg.content === config.prefixCommand + "alv") {
-    SendImage("alv.jpg");
+    SendImage("alv.jpg",msg);
   }
 });
